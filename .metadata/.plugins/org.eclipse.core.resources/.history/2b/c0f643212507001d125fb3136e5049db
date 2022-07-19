@@ -1,0 +1,23 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.FileSystemNotFoundException;
+import java.util.Scanner;
+
+public class Mysweetprog {
+
+	public static void main(String[] args) throws FileSystemNotFoundException, FileNotFoundException {
+		System.out.println("Hello World");
+		
+		Scanner in = new Scanner(new File("src/student.txt"));
+		
+		while(in.hasNextLine()) {
+			System.out.println(in.nextLine());
+		}	
+		
+		in.close();
+		
+
+		
+	}
+
+}
